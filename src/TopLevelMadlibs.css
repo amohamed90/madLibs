@@ -1,15 +1,15 @@
-.Madlibs-h1 {
+.TopLevelMadlibs-h1 {
   margin-bottom: 20px;
   color: #0f4c81;
 }
 
-.Madlibs {
+.TopLevelMadlibs {
   margin: auto;
   width: 50%;
   padding: 10px;
 }
 
-.Madlibs-select {
+.TopLevelMadlibs-select {
   margin-bottom: 20px;
   color: #0d3b63;
   font-weight: bolder;

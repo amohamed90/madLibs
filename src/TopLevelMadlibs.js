@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import MadlibForm from './MadlibForm';
 import Madlib from './Madlib';
-import './Madlibs.css';
+import './TopLevelMadlibs.css';
 
-function Madlibs() {
+function TopLevelMadlibs() {
   const [selectedMadlib, setSelectedMadlib] = useState("random");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  // used a state for form here to get my form data and pass it to the Madlib to create
+  // the story dynamically
   const [formData, setFormData] = useState({});
 
   const templates = {
@@ -53,9 +55,9 @@ function Madlibs() {
   }
 
   return (
-    <div className="Madlibs">
-      <h1 className="Madlibs-h1">Madlibs!</h1>
-      <select className="Madlibs-select form-control" onChange={evt => handleChange(evt)}>
+    <div className="TopLevelMadlibs">
+      <h1 className="TopLevelMadlibs-h1">Madlibs!</h1>
+      <select className="TopLevelMadlibs-select form-control" onChange={evt => handleChange(evt)}>
         <option value="random">Random</option>
         <option value="halloween">Halloween</option>
         <option value="thanksgiving">Thanksgiving</option>
@@ -66,4 +68,4 @@ function Madlibs() {
   );
 }
 
-export default Madlibs
+export default TopLevelMadlibs

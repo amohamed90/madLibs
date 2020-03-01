@@ -22,7 +22,8 @@ function MadlibForm({ setFormData, keys, onSubmit }) {
       <form className="form-group" onSubmit={handleSubmit}>
         {keys.map((key, i) =>
         <div key={i}>
-          <input className="form-control"
+          <input
+          className="form-control"
           type="text"
           name={key}
           id={key}

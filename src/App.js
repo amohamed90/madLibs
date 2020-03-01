@@ -1,11 +1,11 @@
 import React from 'react';
-import Madlibs from './Madlibs';
+import TopLevelMadlibs from './TopLevelMadlibs';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Madlibs />
+      <TopLevelMadlibs />
     </div>
   );
 }
