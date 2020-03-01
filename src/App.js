@@ -1,5 +1,5 @@
 import React from 'react';
-import Madlibs from './Madlibs'
+import Madlibs from './Madlibs';
 import './App.css';
 
 function App() {

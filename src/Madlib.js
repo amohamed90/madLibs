@@ -1,13 +1,19 @@
-import React from "react";
-import './Madlib.css'
+import React from 'react';
+import './Madlib.css';
+//https://www.npmjs.com/package/string-format
+import format from 'string-format';
 
-function Madlib({id, noun, noun2, adjective, color, reset}) {
+function Madlib({formData, story}) {
+  
   return (
     <div className="Madlib">
-      {`There was a ${color} ${noun} who loved a ${adjective} ${color}`}<br />
-      <button className="btn btn-info" onClick={reset}>Reset</button>
+      <div>{format(story, formData)}</div>
     </div>
-  );
+  )
 }
 
-export default Madlib;
+export default Madlib
+
+
+
+
