@@ -23,16 +23,15 @@ function Madlibs() {
       adjective={madLib.adjective}
       color={madLib.color}
       reset={reset}
-      />
+    />
 
   const madlibForm = <MadlibForm createMadlib={ create }/>
   const length = Object.keys(madLib).length > 0;
 
   return (
-    <div className="Madlib">
-      <h1>Madlibs!</h1>
+    <div className="Madlibs">
+      <h1 className="Madlibs-h1">Madlibs!</h1>
       <div>{length ? madLibStory : madlibForm}</div>
-      {/* <div>{length ? resetButton : ""}</div> */}
     </div>
   );
 }
